@@ -20,9 +20,22 @@ Type 2 -> supervised horizontally stacked target distance
 * Keep track of distance decrease per feature
 
 Type 3 -> supervised inter-sample distance
-* Partial Silhouette score between target groups based on fractional distance norms (settable, default 0.1, 0.5, 1, 2): use sampling for intra and mean/median for inter
+* Partial Silhouette score between target groups based on fractional distance norms (settable, default 0.1, 0.5, 1, 2): use sampling for intra and mean/median for inter. Optional to use cross-entropy.
 * add dimension if partial silhouette score is increased
 * Keep track of score increase per dimension
+
+# Unsupervised
+
+?
+
+
+# Code setup
+
+Contains the following public methods
+
+```.fit_transform, .fit```
+
+
 
 Sources:
 * high dimensional distance: [1](https://bib.dbvis.de/uploadedFiles/155.pdf)
